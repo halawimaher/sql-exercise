@@ -51,8 +51,10 @@ where role="Graphic Designer";
 #Count and Filter
 #person with highest number of points
 select Name, Max(Points) from students;
+#Average points of students
+select avg(points) from students
 #number of students with 500 points
-select count(*) from students where Points ="500";
+select count(name) from students where Points ="500";
 #name of students that have S
 select Name from students where Name like "%s%";
 #name of students descending order of points
